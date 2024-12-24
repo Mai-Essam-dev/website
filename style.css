@@ -1,0 +1,124 @@
+:root {
+    --main-color: #f4623a;
+    --white-color: #fff;
+    --black-color: #000;
+  }
+.nav-link{
+      color: var(--white-color);
+      transition: all 0.3s ease-in-out;
+  }
+  .nav-link:hover{
+      color: var(--white-color);
+      font-weight: bolder;
+  }
+  .nav-link.active{
+      color: red !important;
+  }
+.divider{
+    display: block;
+    width: 30%;
+    margin: 0% auto;
+    height: 0.5vh;
+    content: "";
+}
+.divider-light{
+    background-color: var(--white-color);
+}
+.divider-main{
+    background-color: var(--main-color);
+}
+header{
+    background-image: url("project/img/bg-masthead.jpg");
+    background-color: rgba(93,77,66,0.8);
+    background-blend-mode: multiply;
+    height: 100vh;
+    background-size:cover ;
+}
+header .begin{
+    height: 80vh;
+    width: 50%;
+    margin: 0 auto;
+    color: var(--white-color);
+}
+header .begin .container h1{
+    font-size: 4rem;
+}
+header .begin .find-out-btn{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 2% 5%;
+}
+@media (max-width: 767.98px) { 
+    header h1{
+        font-size: 16px;
+    };
+ }
+/* start about */
+.about{
+    background-color: var(--main-color);
+}
+.about .container{
+    color: var(--white-color);
+    height: 50vh;
+    align-content: center;
+}
+.about .container .divider{
+    max-width: 6%;
+}
+.about .container .btn-light{
+    padding: 2% 5%;
+}
+/* start sections */
+.services{
+    background-color: var(--white-color);
+    height: 70vh;
+    align-content: center;
+}
+.services .container .divider{
+    max-width: 6%;
+}
+.services .container .icon{
+    color: var(--main-color);
+}
+/* end services */
+/* start portfolio */
+.portfolio{
+    height: 70vh;
+    align-content: center;}
+    img{
+        width:100%;
+        height:100%;
+    }
+    .caption{
+        background-color: var(--main-color);
+        opacity: 0;
+        color: var(--white-color);
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image:hover .caption{
+        opacity: 0.9;
+    }
+
+    .download{
+        height: 70vh;
+        align-content: center;
+        background-color:rgb(33 37 41);
+        color: var(--white-color);
+    }
+    .form{
+        height: 70vh;
+        align-content: center;}
+        
+        .line{
+    max-width: 6%;
+}
+.input{
+    margin-left: 30%;
+    max-width: 40%;
+}
